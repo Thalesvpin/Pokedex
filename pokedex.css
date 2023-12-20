@@ -1,0 +1,70 @@
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+.header{
+	background-color: grey;
+	padding: 6vh;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.filter{
+	display: flex;
+	justify-content: center;
+}
+
+.filter a{
+	text-decoration: none;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 10px;
+	margin: 10px;
+	color: black;
+	background-color: rgb(186, 186, 186);
+}
+
+.poke-card{
+	display: grid;
+	grid-template-rows: 200px 1fr;
+	justify-content: center;
+	border: 2px solid grey;
+	border-radius: 30px;
+	box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.416);
+	margin: 10px;
+	overflow: hidden;
+}
+
+.poke-card:hover{
+	transform: translate(-9px, -9px);
+	box-shadow: 10px 10px 7px rgba(128, 128, 128, 0.252);
+}
+
+.poke-img img{
+	height: 80%;
+	padding-top: 25px;
+}
+
+.poke-name{
+	text-align: center;
+}
+
+.poke-name h3{
+	font-size: 23px;
+}
+
+.pokemons{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 250px);
+	/* grid-template-rows: ; */
+	justify-content: center;
+}
+
+.border{
+	border: 1px solid red;
+}

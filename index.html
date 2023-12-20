@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="pokedex.css" rel="stylesheet">
+	<script src="pokedex.js" type="module"></script>
+	<title>Thales' Pokedex</title>
+</head>
+
+<body>
+	<div class="header">
+		<h1>Thales' Pokedex</h1>
+	</div>
+
+	<div class="filter">
+		<a href="#" data-filter="All">All</a>
+		<a href="#" data-filter="Fire">Fire</a>
+		<a href="#" data-filter="Water">Water</a>
+		<a href="#" data-filter="Grass">Grass</a>
+		
+			<input type="text" placeholder="Search...">
+	</div>
+
+	<div id="import-pokemons"></div>
+
+	<template id="poke-card">
+		<div class="poke-card">
+			<div class="poke-img">
+				<img>
+			</div>
+			<div class="poke-name">
+				<h3></h3>
+			</div>
+		</div>
+	</template>
+
+</body>
+
+</html>
