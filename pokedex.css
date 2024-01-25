@@ -5,10 +5,11 @@ html, body{
 
 body{
 	font-family: sans-serif;
+	background-color: rgb(122, 199, 246);
 }
 
 .header{
-	background-color: grey;
+	background-color: rgb(221, 18, 52);
 	padding: 6vh;
 	text-align: center;
 	margin-bottom: 30px;
@@ -17,27 +18,64 @@ body{
 .filter{
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
 }
 
 .filter a{
 	text-decoration: none;
-	padding: 10px;
-	border: 2px solid black;
-	border-radius: 10px;
-	margin: 10px;
+	padding: 13.4px;
+	border: 2px solid rgb(0, 82, 133);
+	border-radius: 45px;
+	margin-right: 10px;
 	color: black;
-	background-color: rgb(186, 186, 186);
+	background-color: rgb(47,173,253);
+}
+
+.filter a:hover{
+	background-color: rgb(0, 130, 211);
+}
+
+form{
+	display: flex;
+	align-items: center;
+}
+
+form #search-bar{
+	height: 45px;
+	border-radius: 45px;
+	margin-right: 6px;
+	border: 2px solid rgb(0, 82, 133);
+}
+
+form button{
+	height: 51px;
+	width: 51px;
+	background-color: transparent;
+	border: transparent;
+	font-size: 1.9rem;
+	color: rgb(0, 82, 133);;
+}
+
+form button{
+	height: 51px;
+	width: 51px;
+	background-color: transparent;
+	border: transparent;
+	font-size: 1.9rem;
+	color: rgb(0, 82, 133);;
 }
 
 .poke-card{
 	display: grid;
 	grid-template-rows: 200px 1fr;
 	justify-content: center;
-	border: 2px solid grey;
+	border: 2px solid rgb(0, 82, 133);
 	border-radius: 30px;
 	box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.416);
 	margin: 10px;
 	overflow: hidden;
+	background-color: rgb(47,173,253);
 }
 
 .poke-card:hover{
@@ -62,6 +100,11 @@ body{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 250px);
 	/* grid-template-rows: ; */
+	justify-content: center;
+}
+
+.no-results{
+	display: flex;
 	justify-content: center;
 }
 

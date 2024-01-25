@@ -3,6 +3,7 @@
 
 <head>
 	<link href="pokedex.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="pokedex.js" type="module"></script>
 	<title>Thales' Pokedex</title>
 </head>
@@ -14,14 +15,11 @@
 
 	<div class="filter">
 		<a href="#" data-filter="All">All</a>
-		<a href="#" data-filter="Fire">Fire</a>
-		<a href="#" data-filter="Water">Water</a>
-		<a href="#" data-filter="Grass">Grass</a>
-		
-			<input type="text" placeholder="Search...">
+		<form>
+			<input id="search-bar" type="text" placeholder="Search...">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
 	</div>
-
-	<div id="import-pokemons"></div>
 
 	<template id="poke-card">
 		<div class="poke-card">
