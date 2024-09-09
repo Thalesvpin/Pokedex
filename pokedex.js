@@ -4,7 +4,7 @@
 
 
 
-import pokedex from './pokedex.json' assert { type: 'json' }
+import pokedex from './pokedex.json' with { type: 'json' }
 
 const types = ["GRASS","POISON","FIRE","WATER","FLYING","BUG","NORMAL","ELECTRIC","GROUND","FAIRY","FIGHTING","PSYCHIC","ROCK","STEEL","ICE","GHOST","DRAGON","DARK"];
 
